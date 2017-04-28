@@ -1,0 +1,22 @@
+{
+  "name": "polychronus",
+  "version": "0.1.0",
+  "description": "Generative Music Sequencer",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/rowlandrose/polychronus",
+  "keywords": [
+    "Generative",
+    "Music",
+    "Sequencer",
+    "MIDI",
+    "Random"
+  ],
+  "author": "Rowland Rose",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  }
+}
