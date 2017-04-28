@@ -1,3 +1,13 @@
 body {
     background: #eee;
 }
+
+#log_output p.info {
+    color: #333;
+}
+#log_output p.success {
+    color: #00cc00;
+}
+#log_output p.fail {
+    color: #cc0000;
+}
