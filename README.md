@@ -1,0 +1,2 @@
+# polychronus
+Generative Music Sequencer
