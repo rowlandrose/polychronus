@@ -1,13 +1,112 @@
-body {
-    background: #eee;
+
+/* Font used for all of app */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+  font-style: normal;
+  src: url('fonts/Source-Sans-Pro-regular.eot');
+  src: url('fonts/Source-Sans-Pro-regular.eot?#iefix') format('embedded-opentype'),
+       local('Source Sans Pro'),
+       local('Source-Sans-Pro-regular'),
+       url('fonts/Source-Sans-Pro-regular.woff2') format('woff2'),
+       url('fonts/Source-Sans-Pro-regular.woff') format('woff'),
+       url('fonts/Source-Sans-Pro-regular.ttf') format('truetype'),
+       url('fonts/Source-Sans-Pro-regular.svg#SourceSansPro') format('svg');
 }
 
-#log_output p.info {
-    color: #333;
+body * {
+    box-sizing: border-box;
 }
-#log_output p.success {
+/* Main Styles */
+body {
+    background: #333;
+    color: #eee;
+    background-image: url(img/backgrounds/dark/escheresque_ste.png);
+    margin:0;
+    padding:0;
+    font-family: 'Source Sans Pro';
+}
+
+h1 {
+    color: rgb(254, 254, 254);
+    padding: 10px 30px;
+    background: rgb(222, 90, 30);
+    margin: 0px;
+    text-align: center;
+}
+
+#main_container {
+    margin: 10px;
+    font-size: 12px;
+}
+
+.block {
+    margin: 0 0 10px;
+}
+.block .head {
+    background: #ccc;
+    padding: 3px 5px 0;
+    color: #666;
+    font-weight: bold;
+}
+.block .body {
+    background: #666;
+    padding: 5px;
+    border: 3px solid #ccc;
+}
+
+.hide {
+    display: none;
+}
+
+/* Log Output */
+#log_output .body {
+    height: 50px;
+    overflow: auto;
+}
+
+#log_output .body p {
+    margin: 0;
+    padding: 0;
+}
+#log_output .body p.info {
+    color: #ccc;
+}
+#log_output .body p.success {
     color: #00cc00;
 }
-#log_output p.fail {
+#log_output .body p.fail {
     color: #cc0000;
 }
+
+/* Song Section */
+#song_section {
+    background: rgba(0,0,0,0.3);
+    overflow: auto;
+}
+#song_section .track_settings {
+    float: left;
+    width: 20%;
+}
+#song_section .track_grid {
+    float: left;
+    width: 80%;
+}
+
+#song_section .track {
+    background: rgb(222, 90, 30);
+    padding: 10px;
+    width: 100%;
+}
+#song_section .add_track {
+    background: #444;
+    color: #eee;
+    font-size: 25px;
+    text-align: center;
+    max-width: 100px;
+    margin: 0 auto;
+}
+    #song_section .add_track:hover {
+        background: #666;
+        cursor: pointer;
+    }

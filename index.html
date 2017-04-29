@@ -6,12 +6,68 @@
     <link href="main.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-    <div id="log_output"></div>
+    <h1>Polychronus</h1>
+
+    <div id="main_container">
+
+        <div id="log_output" class="block">
+            <div class="head">Process Log</div>
+            <div class="body"></div>
+        </div>
+        
+        <div id="choose_device" class="block hide">
+            <div class="head">Choose Device</div>
+            <div class="body"></div>
+        </div>
+
+        <div id="song_section">
+
+            <div class="track_settings">
+                <div class="track">
+                    <div class="title">Track 1</div>
+                    <div class="device"><select><option value="0">something</option></select></div>
+                    <div class="instrument"><select><option value="0">something</option></select></div>
+                    <div class="channel"><select><option value="0">something</option></select></div>
+                </div>
+                <div class="add_track">+ Track</div>
+            </div>
+
+            <div class="track_grid">
+
+                <div class="arrow_line">
+                    <div class="arrow"></div>
+                    <div class="line"></div>
+                </div>
+
+                <table class="grid">
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table><!-- END grid -->
+
+            </div><!-- END track_grid -->
+
+        </div><!-- END song_section -->
+        
+    </div><!-- END main_container -->
+  
   </body>
 
   <script>
